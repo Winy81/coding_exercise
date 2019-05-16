@@ -1,9 +1,9 @@
 #the test bit overcomplicated the context tag not necessary but can be usefull it the program going to be more complicate.
 
 
-require_relative File.expand_path("../../ruby_exercise_1/lib/job.rb")
-require_relative File.expand_path("../../ruby_exercise_1/lib/order.rb")
-require_relative File.expand_path("../../ruby_exercise_1/lib/errors.rb")
+require_relative File.expand_path("../lib/job.rb")
+require_relative File.expand_path("../lib/order.rb")
+require_relative File.expand_path("../lib/errors.rb")
 
 
 RSpec.describe "For ruby exercise" do
