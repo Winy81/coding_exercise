@@ -7,8 +7,8 @@ class Order
 
   def add(job_dep)
     job_dep.split("\n").each do |row| # brake the string on the enter (/n)
-    job = Job.new(row) # takes the rows and convert into an array 
-    @jobs << (job) unless @jobs.include?(job) # pushes job instances to an array @jobs
+      job = Job.new(row) # takes the rows and convert into an array 
+      @jobs << (job) unless @jobs.include?(job) # pushes job instances to an array @jobs
     end
   end
 
