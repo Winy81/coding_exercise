@@ -19,7 +19,7 @@ class Order
     order << (job.name) if order.include?(job.name) == false #the filter refuse add same job twice into the array
     
 
-      if job.depends_on? == true
+      if job.depends_on?
       
        raise SelfDependencyError.new("jobs can’t depend on themselves") if job.dependency == job.name #raises error if the job dependancy is the jo itself
          position = order.index(job.name) #mark the name of the index
